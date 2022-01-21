@@ -43,6 +43,10 @@ header.sticky{
 }
 
 /* about */
+.sections-about-container{
+    width: 100%;
+    display: flex;
+}
 .other-programs{
     display: flex;
     margin-top: 30px;

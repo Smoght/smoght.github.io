@@ -148,10 +148,14 @@ header.sticky{
 .typing{
     position: relative;
     color:#C70039 ;
+    z-index: 1;
 }
 .typing::after{
     content: "";
     position: absolute;
+}
+.typing.ocultar{
+    z-index: -1;
 }
 .icons-banner img{
     width: 60px;
@@ -159,12 +163,12 @@ header.sticky{
 }
 
 /* sobre mi */
-.sections-about-container{
+/* .sections-about-container{
     width: 100%;
     max-width: 3500px;
     display: flex;
     margin: 20px auto;
-}
+} */
 .sections-about{
     margin: 5px 30px;
 }
