@@ -1,0 +1,56 @@
+header{
+    width: 100%;
+    height: 90px;
+    background: none;
+    position: fixed;
+    transition: 0.5s;
+}
+header.sticky{
+    height: 70px;
+    background: #293241;
+    color: #fff;
+    padding-bottom: 20px;
+    z-index: 99;
+}
+.icon-menu{
+    display: none;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    width: 90%;
+    height: 80px;
+    margin-left: 50px;
+}
+
+/* banner */
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../resourses/man-banner.jpg);
+    ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* about */
+.other-programs{
+    display: flex;
+    margin-top: 30px;
+}
+.other-programs-title{
+    width: 100%;
+    display: block;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
