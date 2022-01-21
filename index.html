@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/33f50e22e3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tableta.css" media="(min-width: 930px)">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-container">
+                <i class="fas fa-radiation-alt nav-logo"></i>
+                <div class="icon-menu"
+                for="menu"></div>
+               
+                <div class="navigation">
+                    <li><a href="#about" class="nav-items" onclick="toggleMenu();">Sobre mi</a></li>
+                    <li><a href="#skills" class="nav-items" onclick="toggleMenu();">Habilidades</a></li>
+                    <li><a href="#portfolio" class="nav-items" onclick="toggleMenu();">Portafolio</a></li>
+                    <li><a href="#contact" class="nav-items" onclick="toggleMenu();">Contacto</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="banner" id="banner">
+        <div class="text-banner">
+            <h2>Soy John Romero</h2>
+            <h1 class="typing"> Hola</h1>
+        </div>
+        <div class="icons-banner">
+            <img src="./resourses/git.svg" alt="">
+            <img src="./resourses/git.svg" alt="">
+            <img src="./resourses/git.svg" alt="">
+        </div>
+    </section>
+    <div id="about" class="separador"></div>
+    <section class="about">
+        <h2 class="title">Sobre mí</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque molestiae minima animi odio eveniet temporibus cupiditate soluta mollitia sapiente? Nihil a repellat deserunt distinctio asperiores ad autem, ab eaque!</p>
+                <img src="./resourses/separatorBlack7.svg" alt="">
+        <div class="sections-about-container">
+            <div class="sections-about">
+                <img src="./resourses/diseño.svg" alt="">
+                <h2 >Diseño</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perspiciatis fugiat nobis consequuntur repudiandae sapiente adipisci sit. Incidunt debitis similique sit. Reprehenderit quisquam architecto debitis? Veniam veritatis neque voluptatum ab?</p>
+            </div>
+            <div class="sections-about">
+                <img src="./resourses/html.svg" alt="">
+                <h2>Programación</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum placeat aperiam totam dignissimos rem accusantium asperiores molestias eum, minima itaque fugit, iure libero suscipit, molestiae nihil repudiandae quas delectus vitae?</p>
+            </div>
+            <div class="sections-about">
+                <img src="./resourses/photo.svg" alt="">
+                <h2>Fotografía</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex voluptates natus deserunt temporibus optio placeat, minima saepe ratione blanditiis perspiciatis et iure, quo consequatur ea obcaecati labore mollitia. Alias, veritatis.</p>
+            </div>
+        </div>
+        <img src="./resourses/separatorBlack7.svg" alt="" class="img-cierre">
+    </section>
+    <div id="skills" class="separador"></div>
+    <section class="skills">
+        <h2 class="title">Habilidades</h2>
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt voluptatum cum magnam tenetur, itaque quidem saepe in perferendis ex aliquam esse provident possimus nesciunt sunt molestias voluptate? Illo, autem dolore?</p>
+        <div class="programs-container">
+            <div class="programs">
+                <img src="./resourses/html5.svg" alt="">
+                <h3>HTML 5</h3>
+            </div>
+            <div class="programs">
+                <img src="./resourses/css.svg" alt="">
+                <h3>CSS</h3>
+            </div>
+            <div class="programs">
+                <img src="./resourses/javascript.svg" alt="">
+                <h3>JAVASCRIPT</h3>
+            </div>
+            <h3 class="other-programs-title">Programas</h3>
+            <div class="other-programs">
+                <div class="programs">
+                    <img src="./resourses/illustrator.svg" alt="">
+                    <h3>Illustrator</h3>
+                </div>
+                <div class="programs">
+                    <img src="./resourses/photoshop.svg" alt="">
+                    <h3>Photoshop</h3>
+                </div>
+                <div class="programs">
+                    <img src="./resourses/indesing.svg" alt="">
+                    <h3>In-Desing</h3>
+                </div>
+            </div>
+        </div>
+        <img src="./resourses/separatorBlack7.svg" alt="" class="img-cierre">
+    </section>
+    <div id="portfolio" class="separador"></div>
+    <section class="portfolio">
+        <h2 class="title">Portafolio</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vel libero quibusdam quis repellendus vitae at error laboriosam nulla, sequi totam, et necessitatibus veritatis pariatur cupiditate accusamus obcaecati ea. Placeat.</p>
+        <div class="portfolio-container">
+            <div class="ful-img" id="fulImgBox"> 
+                <img src="./resourses/diseño1.jpg" id="fulImg" alt="">
+                <span onclick="closeImg()">X</span>
+            </div>
+            <div class="buttons">
+                <ul>
+                    <li class="list active" data-filter="all">All</li>
+                    <li class="list" data-filter="diseño">Diseño</li>
+                    <li class="list" data-filter="programacion">Programación</li>
+                    <li class="list" data-filter="fotografia">Fotografia</li>
+                </ul>
+            </div>
+            <div class="products">
+                <div class="item-box" data-item="diseño" >
+                    <img src="./resourses/diseño1.jpg" alt="" onclick="openFulImg(this.src)">
+                </div>
+                <div class="item-box"  data-item="programacion">
+                    <img src="./resourses/programacion1.jpg" alt="" onclick="openFulImg(this.src)">
+                </div>
+                <div class="item-box"  data-item="fotografia">
+                    <img src="./resourses/fotografia1.jpg" alt="" onclick="openFulImg(this.src)">
+                </div>
+                <div class="item-box" data-item="diseño">
+                    <img src="./resourses/diseño2.png" alt="" onclick="openFulImg(this.src)">
+                </div>
+                <div class="item-box" data-item="programacion">
+                    <img src="./resourses/programacion2.jpg" alt="" onclick="openFulImg(this.src)">
+                </div>
+                <div class="item-box" data-item="fotografia">
+                    <img src="./resourses/fotografia2.jpg" alt="" onclick="openFulImg(this.src)">
+                </div>
+                <div class="item-box" data-item="diseño">
+                    <img src="./resourses/diseño3.png" alt="" onclick="openFulImg(this.src)">
+                </div>
+                <div class="item-box" data-item="programacion">
+                    <img src="./resourses/programacion3.jpg" alt="" onclick="openFulImg(this.src)">
+                </div>
+                <div class="item-box" data-item="fotografia">
+                    <img src="./resourses/fotografia3.png" alt="" onclick="openFulImg(this.src)">
+                </div>
+                <div class="item-box" data-item="diseño">
+                    <img src="./resourses/diseño4.png" alt="" onclick="openFulImg(this.src)">
+                </div>
+                <div class="item-box" data-item="programacion">
+                    <img src="./resourses/programacion4.jpg" alt="" onclick="openFulImg(this.src)">
+                </div>
+                <div class="item-box" data-item="fotografia">
+                    <img src="./resourses/fotografia4.jpg" alt="" onclick="openFulImg(this.src)">
+                </div>
+                <div class="item-box" data-item="diseño">
+                    <img src="./resourses/diseño5.jpg" alt="" onclick="openFulImg(this.src)">
+                </div>
+                <div class="item-box" data-item="programacion">
+                    <img src="./resourses/programacion5.jpg" alt="" onclick="openFulImg(this.src)">
+                </div>
+                <div class="item-box" data-item="fotografia">
+                    <img src="./resourses/fotografia5.jpg" alt="" onclick="openFulImg(this.src)">
+                </div>
+            </div>
+        </div>
+        <img src="./resourses/separatorBlack7.svg" alt="" class="img-cierre">
+    </section>
+    <div id="contact" class="separador"></div>
+    <section class="contact">
+        <h2 class="title">Contactame</h2>
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt voluptatum cum magnam tenetur, itaque quidem saepe in perferendis ex aliquam esse provident possimus nesciunt sunt molestias voluptate? Illo, autem dolore?</p>
+        <form action="" class="contact-form-container">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Nombre" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Nombre" required>
+
+            <label for="numero">Numero de teléfono</label>
+            <input type="text" id="numero" placeholder="Nombre" required>
+
+            <label for="mensaje">Mensaje</label>
+            <input type="text" id="mensaje" placeholder="Nombre" required>
+        </form>
+        <input type="submit" class="submit">
+    </section>
+    <footer>
+        <a href="#banner">
+            <img src="./resourses/arrow.svg" alt="" >
+        </a>
+        <p class="back">Volver Arriba</p>
+        <div class="redes-footer">
+            <img src="./resourses/linkedin.svg" alt="">
+            <img src="./resourses/mail.svg" alt="">
+            <img src="./resourses/whatsapp.svg" alt="">
+        </div>
+        <h3>John Romero</h3>
+        <div class="derechos"> 
+            <img src="./resourses/r.svg" alt="">    
+            <p>Todos los derechos reservados</p>               
+        </div>
+    </footer>
+    <script src="./js/portfolio.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/tipyng.js"></script>
+</body>
+</html>
